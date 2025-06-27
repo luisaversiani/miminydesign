@@ -4,24 +4,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;700&display=swap">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
   <title>Miminy Design - Início</title>
+
   <style>
     body,
     .navbar-nav .nav-link {
       font-family: 'General Sans', sans-serif;
     }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+      }
+
+      .navbar-brand img {
+        max-width: 60px;
+      }
+
+      footer img {
+        max-width: 100px;
+      }
+    }
   </style>
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(239, 232, 223, 0.7);">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/img/logo-miminy-capa.png" alt="logo" class="img-fluid" style="max-width: 80px; height: auto;">
+        <img src="assets/img/logo-miminy-capa.png" alt="logo" class="img-fluid" style="max-width: 80px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +52,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item px-2">
-            <a class="nav-link" aria-current="page" href="index.html" style="color: #542a4a;">Início</a>
+            <a class="nav-link" href="index.html" style="color: #542a4a;">Início</a>
           </li>
           <li class="nav-item px-2">
             <a class="nav-link" href="serviços.html" style="color: #542a4a;">Serviços</a>
@@ -43,12 +65,12 @@
     </div>
   </nav>
 
-
-  <section style="background-color: #bdb5d5; padding-top: 120px;">
+  <!-- SEÇÃO 1: SOBRE -->
+  <section class="pt-5" style="background-color: #bdb5d5;">
     <div class="container">
-      <div class="row align-items-center py-4 py-md-5 mt-3 mt-md-5">
-        <div class="col-12 col-md-6 p-3 p-md-5">
-          <h3 class="fs-2 fw-bolder" style="color: #542a4a;">O QUE É A MIMINY DESIGN?</h3>
+      <div class="row align-items-center py-5">
+        <div class="col-12 col-md-6 p-3">
+          <h3 class="fw-bolder" style="color: #542a4a;">O QUE É A MIMINY DESIGN?</h3>
           <p class="fs-5" style="color: #542a4a;">
             Somos um estúdio criativo fundado por uma designer sonhadora, que acredita no poder de um visual bonito,
             divertido e cheio de personalidade...
@@ -57,33 +79,32 @@
             Acreditamos que o design vai além da estética. Ele comunica, envolve e cria memórias...
           </p>
         </div>
-        <div class="col-12 col-md-6 py-4 py-md-5 text-center">
+        <div class="col-12 col-md-6 text-center">
           <img src="assets/img/logo-miminy-capa.png" class="img-fluid" alt="capa">
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SEÇÃO 2: PORTFÓLIO -->
   <section class="categorias" style="background-color: #f7e3a3;">
     <div class="container py-5">
-      <div class="row">
-        <div class="col-12 text-center mt-4">
-          <h3 class="fs-6" style="color: #542a4a;">Antes mesmo de nascermos como estúdio...</h3>
-          <h1 class="fs-5 fw-bolder" style="color: #542a4a;">PROJETOS QUE CONSTRUÍRAM O CAMINHO...</h1>
+      <div class="text-center">
+        <h3 class="fs-6" style="color: #542a4a;">Antes mesmo de nascermos como estúdio...</h3>
+        <h1 class="fs-5 fw-bolder" style="color: #542a4a;">PROJETOS QUE CONSTRUÍRAM O CAMINHO...</h1>
+      </div>
+      <div class="row text-center mt-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <img src="assets/img/capa-behance-headers.png" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <img src="assets/img/capa-chuumat.jpg" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <img src="assets/img/capa-posters.jpg" class="img-fluid">
         </div>
       </div>
-      <div class="row text-center p-3 mt-4 justify-content-center">
-        <div class="col-12 col-sm-6 col-md-4 mb-3">
-          <img src="assets/img/capa-behance-headers.png" class="img-fluid" style="max-width: 400px;">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 mb-3">
-          <img src="assets/img/capa-chuumat.jpg" class="img-fluid" style="max-width: 400px;">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 mb-3">
-          <img src="assets/img/capa-posters.jpg" class="img-fluid" style="max-width: 400px;">
-        </div>
-      </div>
-      <div class="col-12 text-center mt-4">
+      <div class="text-center mt-4">
         <a href="https://www.behance.net/luisaversianidepaula" target="_blank" class="btn btn-outline-secondary"
           style="color: #542a4a; border-color: #542a4a;">
           Veja mais projetos!
@@ -92,76 +113,77 @@
     </div>
   </section>
 
+  <!-- SEÇÃO 3: DEPOIMENTO -->
   <section style="background-color: #c5edff;">
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mt-5">
-          <h1 class="fs-3 fw-bolder mt-4" style="color: #542a4a;">O QUE DIZEM POR AÍ?</h1>
-        </div>
-        <div class="row justify-content-center align-items-center py-5">
-          <div class="col-12 col-md-6 text-center p-4">
-            <img src="assets/img/tucanas-logo.jpg" class="img-fluid rounded-circle" width="100" height="100">
-            <h3 class="fs-5 fw-bolder mt-4" style="color: #542a4a;">Tucana's</h3>
-            <p style="color: #542a4a;">luísa, você arrasou demais! as tucanas amaram e estamos encantadas...</p>
-            <p style="color: #542a4a;">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </p>
-          </div>
+      <div class="text-center pt-5">
+        <h1 class="fs-3 fw-bolder" style="color: #542a4a;">O QUE DIZEM POR AÍ?</h1>
+      </div>
+      <div class="row justify-content-center align-items-center py-5">
+        <div class="col-12 col-md-6 text-center p-4">
+          <img src="assets/img/tucanas-logo.jpg" class="img-fluid rounded-circle" style="width:100px;">
+          <h3 class="fs-5 fw-bolder mt-4" style="color: #542a4a;">Tucana's</h3>
+          <p style="color: #542a4a;">luísa, você arrasou demais! as tucanas amaram e estamos encantadas...</p>
+          <p style="color: #542a4a; font-size: 1.2rem;">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="rodape" style="background-color: #efe8df;">
+  <!-- FOOTER -->
+  <footer style="background-color: #efe8df;">
     <div class="container">
       <div class="row py-5 text-center text-md-start">
-        <div class="col-12 col-md-3 mt-3">
-          <img src="assets/img/logo-miminy-design.png" class="img-fluid" height="150" width="150">
-          <p class="fs-8" style="color: #542a4a;">© 2025 Miminy Design.<br>Todos os direitos reservados.</p>
+        <div class="col-12 col-md-3 mb-4">
+          <img src="assets/img/logo-miminy-design.png" class="img-fluid mb-2" style="max-width: 150px;">
+          <p class="text-muted fs-6">© 2025 Miminy Design.<br>Todos os direitos reservados.</p>
         </div>
-        <div class="col-12 col-md-3 mt-5">
-          <h3 class="fs-6 fw-bolder mb-3" style="color: #542a4a;">LINKS</h3>
+
+        <div class="col-12 col-md-3 mb-4">
+          <h6 class="fw-bold" style="color: #542a4a;">LINKS</h6>
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link p-0 mt-3" style="color: #542a4a;"
-                href="https://www.behance.net/luisaversianidepaula">Portfólio</a></li>
-            <li class="nav-item"><a class="nav-link p-0 mt-3" style="color: #542a4a;"
-                href="https://br.pinterest.com/miminydesign/_profile/">Pinterest</a></li>
-            <li class="nav-item"><a class="nav-link p-0 mt-3" style="color: #542a4a;"
-                href="https://docs.google.com/spreadsheets/d/1ZkpbBke-COVoCBph9r5eHkIw5ZaQsxYt2Gmgt_cJjlU/edit?usp=sharing">Cronograma</a>
-            </li>
+            <li><a class="nav-link p-0 mt-2" href="https://www.behance.net/luisaversianidepaula"
+                style="color: #542a4a;">Portfólio</a></li>
+            <li><a class="nav-link p-0 mt-2" href="https://br.pinterest.com/miminydesign/_profile/"
+                style="color: #542a4a;">Pinterest</a></li>
+            <li><a class="nav-link p-0 mt-2"
+                href="https://docs.google.com/spreadsheets/d/1ZkpbBke-COVoCBph9r5eHkIw5ZaQsxYt2Gmgt_cJjlU/edit?usp=sharing"
+                style="color: #542a4a;">Cronograma</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-3 mt-5">
-          <h3 class="fs-6 fw-bolder mb-3" style="color: #542a4a;">MENU</h3>
+
+        <div class="col-12 col-md-3 mb-4">
+          <h6 class="fw-bold" style="color: #542a4a;">MENU</h6>
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link p-0 mt-3" style="color: #542a4a;" href="index.html">Início</a></li>
-            <li class="nav-item"><a class="nav-link p-0 mt-3" style="color: #542a4a;" href="serviços.html">Serviços</a>
-            </li>
-            <li class="nav-item"><a class="nav-link p-0 mt-3" style="color: #542a4a;" href="contato.html">Contato</a>
-            </li>
+            <li><a class="nav-link p-0 mt-2" href="index.html" style="color: #542a4a;">Início</a></li>
+            <li><a class="nav-link p-0 mt-2" href="serviços.html" style="color: #542a4a;">Serviços</a></li>
+            <li><a class="nav-link p-0 mt-2" href="contato.html" style="color: #542a4a;">Contato</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-3 mt-5">
-          <h3 class="fs-6 fw-bolder mb-3" style="color: #542a4a;">REDES SOCIAIS</h3>
+
+        <div class="col-12 col-md-3 mb-4">
+          <h6 class="fw-bold" style="color: #542a4a;">REDES SOCIAIS</h6>
           <ul class="nav justify-content-center justify-content-md-start">
-            <li class="nav-item"><a class="nav-link" style="color: #542a4a;"
-                href="https://www.instagram.com/miminydesign/"><i class="bi bi-instagram"></i></a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #542a4a;" href="https://x.com/miminydsg"><i
+            <li><a class="nav-link" href="https://www.instagram.com/miminydesign/" style="color: #542a4a;"><i
+                  class="bi bi-instagram"></i></a></li>
+            <li><a class="nav-link" href="https://x.com/miminydsg" style="color: #542a4a;"><i
                   class="bi bi-twitter-x"></i></a></li>
-            <li class="nav-item"><a class="nav-link" style="color: #542a4a;"
-                href="https://br.pinterest.com/miminydesign/_profile/"><i class="bi bi-pinterest"></i></a></li>
+            <li><a class="nav-link" href="https://br.pinterest.com/miminydesign/_profile/" style="color: #542a4a;"><i
+                  class="bi bi-pinterest"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
   </script>
 </body>
 
